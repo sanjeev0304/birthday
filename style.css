@@ -1,12 +1,30 @@
 body {
-    background-image: linear-gradient(to right, rgb(176, 176, 224)  , rgb(236, 234, 234));
+    background-image: linear-gradient(to left, rgb(176, 176, 224)  , rgb(236, 234, 234)); 
+   
   }
-  .container{
+  .flexbox-container{
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    gap:500px;
   }
-  * > img{
-    height: 350px;
+  .container-1{
+   display: grid;
+   grid-template-rows:310px 310px;
+   grid-template-columns: 225px 225px;
+  }
+  .container-2{
+    display: grid;
+    grid-template-rows:310px 310px;
+    grid-template-columns: 225px 225px;
+    align-self: flex-end;
+   }
+
+  .pro{
+    height: 305px;
+    width: auto;
+    border: 5px solid #fff;
+}
+  .land{
+    width: 454px;
+    height: 300px;
     border: 5px solid #fff;
   }
